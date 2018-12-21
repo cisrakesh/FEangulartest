@@ -1,0 +1,16 @@
+
+            <button type="button" [routerLink]="['/hospital']" class="btn btn-primary btn-xs">
+                Back
+            </button>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Contact</td>
+    </tr>
+    <tr *ngFor="let eachDepartment of departmentList">
+        <td>{{eachDepartment.name}}</td>
+        <td>{{eachDepartment.value}}</td>
+        
+    </tr>
+</table>
